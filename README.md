@@ -4,7 +4,7 @@
 </div>
 StockFetch is a command-line application inspired by Neofetch, designed for stock market enthusiasts. It fetches and displays essential stock information alongside ASCII art logos of the requested ticker symbols in a visually appealing format. The output is color-coded to indicate whether the stock price has increased or decreased compared to its previous close.
 
-![RKLB Screenie](./RKLB-Screenshot)
+![RKLB Screenie](./RKLB)
 
 **A command line app featuring:**
 
