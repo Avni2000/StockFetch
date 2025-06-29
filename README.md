@@ -3,19 +3,35 @@
 # Stockfetch
 </div>
 
-**Think Neofetch for stocks**
+**Neofetch for stocks**
+![Screenshot](./image.png)
 
-![RKLB Screenie](./RKLB)
+This is one of my first ventures into creating pip packages, and much of it came into fruition because of my love of (neo/fast)fetch
 
-**Notes:**
+I've spent lots of time on r/UnixPorn and I hope they have something new to play around with now :)
 
-As with neofetch, this isn't meant to be a representation of complex data or anything, just a cute, simple CLI for stock nerds to show off.
+## Installation
+>pip install stockfetch 
 
-**Acknowledgments**
 
-Inspired by Neofetch.
+### Note:
 
-Uses Yahoo Finance API for stock data.
+Older versions of windows CMD might not support ANSI colors by default. Consider using powershell.
 
-> Happy stock tracking!
 
+Help:
+```
+avni@fedora:~/source/repos/StockFetch$ stockfetch -h
+usage: stockfetch [-h] [--no-logo] ticker
+
+StockFetch - Display stock information with ASCII art logos
+
+positional arguments:
+  ticker      Stock ticker symbol (e.g., AAPL, TSLA)
+
+options:
+  -h, --help  show this help message and exit
+  --no-logo   Skip ASCII logo display
+
+Example: stockfetch TSLA
+```

@@ -1,7 +1,5 @@
 """
 StockFetch - Think Neofetch for stocks
-
-A CLI tool for displaying stock information with ASCII art logos.
 """
 
 from .Pyfinance import ticker, make_ascii, validate_ticker

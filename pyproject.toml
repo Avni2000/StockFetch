@@ -4,8 +4,8 @@ build-backend = "hatchling.build"
 
 [project]
 name = "stockfetch"
-version = "1.0.0"
-description = "Neofetch for stocks - A CLI tool for displaying stock information with ASCII art"
+version = "1.0.1"
+description = "Neofetch for stocks"
 readme = "README.md"
 license = {text = "MIT"}
 authors = [
