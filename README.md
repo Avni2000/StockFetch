@@ -2,37 +2,36 @@
 
 # Stockfetch
 </div>
-StockFetch is a command-line application inspired by Neofetch, designed for stock market enthusiasts. It fetches and displays essential stock information alongside ASCII art logos of the requested ticker symbols in a visually appealing format. The output is color-coded to indicate whether the stock price has increased or decreased compared to its previous close.
 
-![RKLB Screenie](./RKLB)
+**Neofetch for stocks**
+![Screenshot](./image.png)
 
-**A command line app featuring:**
+This is one of my first ventures into creating pip packages, and much of it came into fruition because of my love of (neo/fast)fetch
 
- - Stock Information: Displays detailed information about a stock, including its daily price changes, industry, market capitalization, and more.
+I've spent lots of time on r/UnixPorn and I hope they have something new to play around with now :)
 
- - ASCII Art Logos: Fetches and generates ASCII art logos for the given stock tickers.
+## Installation
+>pip install stockfetch 
 
- - Color-Coded Output: Displays green text for positive price changes and red for negative.
 
- - Terminal Width Adaptation: Adjusts output to fit within the terminal width to prevent wrapping.
+### Note:
 
-**Features yet to come include:**
+Older versions of windows CMD might not support ANSI colors by default. Consider using powershell.
 
- - Multi-Ticker ASCII Art: Display ASCII art logos for multiple tickers side-by-side.
 
- - Enhanced Terminal Adaptation: Ensure proper formatting regardless of terminal size.
+Help:
+```
+avni@fedora:~/source/repos/StockFetch$ stockfetch -h
+usage: stockfetch [-h] [--no-logo] ticker
 
-Contribution
+StockFetch - Display stock information with ASCII art logos
 
-Contributions are welcome! Feel free to open issues or submit pull requests for improvements and bug fixes.
+positional arguments:
+  ticker      Stock ticker symbol (e.g., AAPL, TSLA)
 
-**Acknowledgments**
+options:
+  -h, --help  show this help message and exit
+  --no-logo   Skip ASCII logo display
 
-Inspired by Neofetch.
-
-Uses Yahoo Finance API for stock data.
-
-ASCII art generation powered by Pillow.
-
-> Happy stock tracking! 📈
-
+Example: stockfetch TSLA
+```
