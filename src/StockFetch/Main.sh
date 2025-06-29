@@ -11,7 +11,7 @@ fi
 asciiArt=$(python3 -c "import Pyfinance; Pyfinance.make_ascii('https://github.com/nvstly/icons/blob/main/ticker_icons/' + '$@' + '.png?raw=true', '$@', 28, 28, 1)" 2>/dev/null)
 
 # If ASCII art failed, create a fallback ticker display
-if [[ "$asciiArt" == *"Invalid ticker"* ]] then
+if [[ "$asciiArt" == *"Invalid ticker"* ]]; then
     # Create a simple ASCII ticker display as fallback
     ticker_upper=$(echo "$@ "| tr '[:lower:]' '[:upper:]')
     asciiArt="
