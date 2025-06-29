@@ -6,6 +6,7 @@ StockFetch CLI - Command line interface for stock information display
 import sys
 import argparse
 from .Pyfinance import ticker, make_ascii
+import re
 
 
 def format_display(ascii_art, info_text):
