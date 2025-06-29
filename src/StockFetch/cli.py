@@ -37,7 +37,6 @@ def format_display(ascii_art, info_text):
     result = []
     for ascii_line, info_line in zip(ascii_lines, info_lines):
         # Strip ANSI codes for width calculation
-        import re
         ascii_clean = re.sub(r'\033\[[0-9;]*m', '', ascii_line)
         padded_ascii = ascii_line + ' ' * (28 - len(ascii_clean))
         result.append(f"{padded_ascii}  {info_line}")
